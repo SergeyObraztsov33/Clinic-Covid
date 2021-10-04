@@ -1,0 +1,422 @@
+[
+  {
+    "task": {
+      "name": "Completion of registration",
+      "schedule": "0 0 12 */2 * *",
+      "description": "Complete filling of the user account"
+    },
+    "request": {
+      "startDate": null,
+      "endDate": null,
+      "treatmentState": "STARTED",
+      "doctorRecommendations": null,
+      "user": {
+        "firstName": "FirstName",
+        "middleName": "MiddleName",
+        "lastName": "LastName",
+        "dateOfBirth": null,
+        "insuranceNumber": null,
+        "phoneNumber": null,
+        "email": "e@e.com",
+        "password": "123456789abcdefg!",
+        "username": "userLogin",
+        "specialisations": [],
+        "roles": []
+      },
+      "symptoms": []
+    },
+    "createdTime": null,
+    "finishedTime": null,
+    "data": [
+      {
+        "taskInstance": {
+          "active": true
+        },
+        "attribute": {
+          "name": "Account photo",
+          "attributeType": {
+            "name": "Image value",
+            "checkMask": ".{1,1024}"
+          }
+        },
+        "stringValue": null,
+        "imageValue": null,
+        "dateValue": null,
+        "numericValue": null
+      },
+      {
+        "taskInstance": {
+          "active": true
+        },
+        "attribute": {
+          "name": "Age",
+          "attributeType": {
+            "name": "Numeric value",
+            "checkMask": "\\d+(\\.\\d+)?"
+          }
+        },
+        "stringValue": null,
+        "imageValue": null,
+        "dateValue": null,
+        "numericValue": null
+      },
+      {
+        "taskInstance": {
+          "active": true
+        },
+        "attribute": {
+          "name": "Contact phone number",
+          "attributeType": {
+            "name": "Phone number value",
+            "checkMask": "[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\\s\\./0-9]*"
+          }
+        },
+        "stringValue": null,
+        "imageValue": null,
+        "dateValue": null,
+        "numericValue": null
+      }
+    ],
+    "active": true
+  },
+  {
+    "task": {
+      "name": "Request for treatment",
+      "schedule": "0 0 12 * * *",
+      "description": "Filling out a treatment request"
+    },
+    "request": {
+      "requestId": 1,
+      "startDate": null,
+      "endDate": null,
+      "treatmentState": "STARTED",
+      "doctorRecommendations": null,
+      "user": {
+        "firstName": "FirstName",
+        "middleName": "MiddleName",
+        "lastName": "LastName",
+        "dateOfBirth": null,
+        "insuranceNumber": null,
+        "phoneNumber": null,
+        "email": "e@e.com",
+        "password": "123456789abcdefg!",
+        "username": "userLogin",
+        "specialisations": [],
+        "roles": []
+      },
+      "symptoms": []
+    },
+    "createdTime": null,
+    "finishedTime": null,
+    "data": [
+      {
+        "taskInstance": {
+          "active": true
+        },
+        "attribute": {
+          "name": "Blood test results",
+          "attributeType": {
+            "name": "String value",
+            "checkMask": "[A-Za-zÐ-Ð¯0-9Ð°-ÑÐÑ\\s]+"
+          }
+        },
+        "stringValue": null,
+        "imageValue": null,
+        "dateValue": null,
+        "numericValue": null
+      },
+      {
+        "taskInstance": {
+          "active": true
+        },
+        "attribute": {
+          "name": "Date of the application",
+          "attributeType": {
+            "name": "Date value",
+            "checkMask": "\\d{4}-[01]\\d-[0-3]\\d(\\s[0-2]\\d:[0-5]\\d:[0-5]\\d)?(?:\\.\\d+)?Z?"
+          }
+        },
+        "stringValue": null,
+        "imageValue": null,
+        "dateValue": null,
+        "numericValue": null
+      },
+      {
+        "taskInstance": {
+          "active": true
+        },
+        "attribute": {
+          "name": "Photo of inflammation on the skin",
+          "attributeType": {
+            "name": "Image value",
+            "checkMask": ".{1,1024}"
+          }
+        },
+        "stringValue": null,
+        "imageValue": null,
+        "dateValue": null,
+        "numericValue": null
+      },
+      {
+        "taskInstance": {
+          "active": true
+        },
+        "attribute": {
+          "name": "Clinic link",
+          "attributeType": {
+            "name": "Url value",
+            "checkMask": "(?:http(s)?:\\/\\/)?[\\w.-]+(?:\\.[\\w\\.-]+)+[\\w\\-\\._~:/?#[\\]@!\\$&'\\(\\)\\*\\+,;=.]+"
+          }
+        },
+        "stringValue": null,
+        "imageValue": null,
+        "dateValue": null,
+        "numericValue": null
+      },
+      {
+        "taskInstance": {
+          "active": true
+        },
+        "attribute": {
+          "name": "Description of patient complaints",
+          "attributeType": {
+            "name": "String value",
+            "checkMask": "[A-Za-zÐ-Ð¯0-9Ð°-ÑÐÑ\\s]+"
+          }
+        },
+        "stringValue": null,
+        "imageValue": null,
+        "dateValue": null,
+        "numericValue": null
+      }
+    ],
+    "active": true
+  },
+  {
+    "task": {
+      "name": "Payment for treatment",
+      "schedule": "0 0 */5 * * *",
+      "description": "Confirmation of completion of treatment and payment"
+    },
+    "request": {
+      "requestId": 1,
+      "startDate": null,
+      "endDate": null,
+      "treatmentState": "STARTED",
+      "doctorRecommendations": null,
+      "user": {
+        "firstName": "FirstName",
+        "middleName": "MiddleName",
+        "lastName": "LastName",
+        "dateOfBirth": null,
+        "insuranceNumber": null,
+        "phoneNumber": null,
+        "email": "e@e.com",
+        "password": "123456789abcdefg!",
+        "username": "userLogin",
+        "specialisations": [],
+        "roles": []
+      },
+      "symptoms": []
+    },
+    "createdTime": null,
+    "finishedTime": null,
+    "data": [
+      {
+        "taskInstance": {
+          "active": true
+        },
+        "attribute": {
+          "name": "Service payment amount",
+          "attributeType": {
+            "name": "Numeric value",
+            "checkMask": "\\d+(\\.\\d+)?"
+          }
+        },
+        "stringValue": null,
+        "imageValue": null,
+        "dateValue": null,
+        "numericValue": null
+      },
+      {
+        "taskInstance": {
+          "active": true
+        },
+        "attribute": {
+          "name": "End date of treatment",
+          "attributeType": {
+            "name": "Date value",
+            "checkMask": "\\d{4}-[01]\\d-[0-3]\\d(\\s[0-2]\\d:[0-5]\\d:[0-5]\\d)?(?:\\.\\d+)?Z?"
+          }
+        },
+        "stringValue": null,
+        "imageValue": null,
+        "dateValue": null,
+        "numericValue": null
+      }
+    ],
+    "active": true
+  },
+  {
+    "task": {
+      "name": "firstTask",
+      "schedule": "0 * * * * *",
+      "description": "run every minute"
+    },
+    "request": {
+      "requestId": 1,
+      "startDate": null,
+      "endDate": null,
+      "treatmentState": "STARTED",
+      "doctorRecommendations": null,
+      "user": {
+        "firstName": "FirstName",
+        "middleName": "MiddleName",
+        "lastName": "LastName",
+        "dateOfBirth": null,
+        "insuranceNumber": null,
+        "phoneNumber": null,
+        "email": "e@e.com",
+        "password": "123456789abcdefg!",
+        "username": "userLogin",
+        "specialisations": [],
+        "roles": []
+      },
+      "symptoms": []
+    },
+    "createdTime": null,
+    "finishedTime": null,
+    "data": [
+      {
+        "taskInstance": {
+          "active": true
+        },
+        "attribute": {
+          "name": "Account photo",
+          "attributeType": {
+            "name": "Image value",
+            "checkMask": ".{1,1024}"
+          }
+        },
+        "stringValue": null,
+        "imageValue": null,
+        "dateValue": null,
+        "numericValue": null
+      },
+      {
+        "taskInstance": {
+          "active": true
+        },
+        "attribute": {
+          "name": "Age",
+          "attributeType": {
+            "name": "Numeric value",
+            "checkMask": "\\d+(\\.\\d+)?"
+          }
+        },
+        "stringValue": null,
+        "imageValue": null,
+        "dateValue": null,
+        "numericValue": null
+      },
+      {
+        "taskInstance": {
+          "active": true
+        },
+        "attribute": {
+          "name": "Contact phone number",
+          "attributeType": {
+            "name": "Phone number value",
+            "checkMask": "[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\\s\\./0-9]*"
+          }
+        },
+        "stringValue": null,
+        "imageValue": null,
+        "dateValue": null,
+        "numericValue": null
+      }
+    ],
+    "active": true
+  },
+  {
+    "task": {
+      "name": "secondTask",
+      "schedule": "* * * * * *",
+      "description": "run every second"
+    },
+    "request": {
+      "requestId": 1,
+      "startDate": null,
+      "endDate": null,
+      "treatmentState": "STARTED",
+      "doctorRecommendations": null,
+      "user": {
+        "firstName": "FirstName",
+        "middleName": "MiddleName",
+        "lastName": "LastName",
+        "dateOfBirth": null,
+        "insuranceNumber": null,
+        "phoneNumber": null,
+        "email": "e@e.com",
+        "password": "123456789abcdefg!",
+        "username": "userLogin",
+        "specialisations": [],
+        "roles": []
+      },
+      "symptoms": []
+    },
+    "createdTime": null,
+    "finishedTime": null,
+    "data": [
+      {
+        "taskInstance": {
+          "active": true
+        },
+        "attribute": {
+          "name": "Account photo",
+          "attributeType": {
+            "name": "Image value",
+            "checkMask": ".{1,1024}"
+          }
+        },
+        "stringValue": null,
+        "imageValue": null,
+        "dateValue": null,
+        "numericValue": null
+      },
+      {
+        "taskInstance": {
+          "active": true
+        },
+        "attribute": {
+          "name": "Age",
+          "attributeType": {
+            "name": "Numeric value",
+            "checkMask": "\\d+(\\.\\d+)?"
+          }
+        },
+        "stringValue": null,
+        "imageValue": null,
+        "dateValue": null,
+        "numericValue": null
+      },
+      {
+        "taskInstance": {
+          "active": true
+        },
+        "attribute": {
+          "name": "Contact phone number",
+          "attributeType": {
+            "name": "Phone number value",
+            "checkMask": "[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\\s\\./0-9]*"
+          }
+        },
+        "stringValue": null,
+        "imageValue": null,
+        "dateValue": null,
+        "numericValue": null
+      }
+    ],
+    "active": true
+  }
+]

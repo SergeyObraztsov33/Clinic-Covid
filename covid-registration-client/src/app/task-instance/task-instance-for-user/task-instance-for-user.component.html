@@ -1,0 +1,25 @@
+<div class="col-md-6 content-wrapper">
+  <h2>Patient tasks: {{ user.firstName }} {{ user.lastName }}</h2>
+  <table class="table table-striped table-responsive-md btn-table">
+    <thead>
+      <tr>
+        <th>Task</th>
+        <th>Description</th>
+        <th>Creation date</th>
+        <th>Completion Date</th>
+        <th>Operations:</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let taskInstance of taskInstances">
+      <td>{{ taskInstance.task.name }}</td>
+      <td>{{ taskInstance.task.description }}</td>
+      <td>{{ taskInstance.createdTime }}</td>
+      <td>{{ taskInstance.finishedTime }}</td>
+      <td>
+        <button mat-flat-button color="loginButton" [routerLink]="['/task/', taskInstance.id]">View</button>
+      </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

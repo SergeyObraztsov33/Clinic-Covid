@@ -1,0 +1,20 @@
+{
+  "id": 1,
+  "taskInstance": {
+    "id": 1,
+    "active": false
+  },
+  "attribute": {
+    "id": 1,
+    "name": "User age",
+    "attributeType": {
+      "id": 1,
+      "name": "Numeric value",
+      "checkMask": "\\d+(\\.\\d+)?"
+    }
+  },
+  "stringValue": null,
+  "imageValue": null,
+  "dateValue": null,
+  "numericValue": 21
+}

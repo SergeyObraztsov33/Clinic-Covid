@@ -1,0 +1,50 @@
+logging:
+  level:
+    org.springframework.web: debug
+    org.hibernate: error
+  file:
+    name: logs/application.log
+
+spring:
+  devtools:
+    restart:
+      enabled: true
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5432}/${POSTGRES_DB_NAME:covid-registration}
+    username: ${POSTGRES_USERNAME:postgres}
+    password: ${POSTGRES_PASSWORD:mysecretpassword}
+    initialization-mode: always
+    sql-script-encoding: UTF-8
+    data: classpath:data_demo.sql
+  jackson:
+    time-zone: GMT+4
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          time_zone: GMT+4
+          use_streams_for_binary: false
+        enable_lazy_load_no_trans: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+  thymeleaf:
+    cache: false
+welcome:
+  message: Hello Thymeleaf
+error:
+  message: Error!
+
+---
+spring:
+  profiles: integrationTest
+  datasource:
+    data: classpath:data.sql
+
+---
+spring:
+  profiles: test
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+
